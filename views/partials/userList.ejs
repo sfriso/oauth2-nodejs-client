@@ -1,0 +1,15 @@
+<div class="elemento" id="listauser">
+    <h4>Lista degli utenti:</h4>
+        
+            <form method="POST"  action="/admin/modifica>">
+            <% for(i=0; i < user.length; i++){ %>
+            <div class="user"><%=user[i]%> </div>
+            <input type="checkbox" id="oggi" name="oggi" value="oggi">
+             <label for="oggi"> Meteo di oggi</label>
+            <input type="checkbox" id="cinque" name="cinque" value="cinque">
+             <label for="cinque"> Previsioni di cinque giorni</label><br>
+             <% }%>
+            <input type="submit" value="Salva">
+            </form>
+    
+</div>

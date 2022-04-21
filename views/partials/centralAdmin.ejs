@@ -1,0 +1,10 @@
+<% for(i=0; i < users.length; i++){ %>
+<form method="post" action='/admin?user=<%=users[i]%>'>
+    <div>User: <%=users[i]%></div>
+    <input type="checkbox" id="oggi" name="oggi" value="oggi" <% if(oggi[i]){%>checked<%}%>>
+    <label for="oggi"> Meteo di oggi</label><br>
+    <input type="checkbox" id="cinque" name="cinque" value="cinque" <% if(cinque[i]){%>checked<%}%> >
+    <label for="vehicle2"> Previsioni cinque giorni</label><br>
+    <input type="submit" value="Submit">
+</form>
+<% }%>
